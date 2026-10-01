@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
-import { Activity, BarChart3, Bot, Building2, Calculator, CircleHelp, ClipboardCheck, GitBranch, Landmark, LayoutDashboard, Menu, MessageSquareText, RotateCcw, Send, ShieldCheck, Sparkles, X } from "lucide-react";
+import { Activity, BarChart3, Bot, Building2, CircleHelp, ClipboardCheck, GitBranch, Landmark, LayoutDashboard, Menu, MessageSquareText, RotateCcw, Send, ShieldCheck, Sparkles, X } from "lucide-react";
 import { useDemo } from "../context/DemoContext";
 import { Button } from "./ui";
 import { Tour } from "./Tour";
+import { DemoModeSwitch } from "./DemoModeSwitch";
 
 const nav = [
   { to: "/", label: "Overview", icon: LayoutDashboard },
@@ -13,7 +14,6 @@ const nav = [
   { to: "/conversations", label: "Conversations", icon: MessageSquareText },
   { to: "/approvals", label: "Approvals", icon: ClipboardCheck },
   { to: "/performance", label: "Performance", icon: BarChart3 },
-  { to: "/tco", label: "TCO & Business Case", icon: Calculator },
   { to: "/architecture", label: "Architecture", icon: GitBranch },
   { to: "/governance", label: "Governance", icon: ShieldCheck },
 ];
@@ -54,6 +54,7 @@ export function Layout() {
           <button className="rounded-lg p-2 lg:hidden" aria-label="Open navigation" onClick={() => setMobileOpen(true)}>{mobileOpen ? <X /> : <Menu />}</button>
           <div className="hidden items-center gap-2 text-xs font-semibold text-slate-500 sm:flex"><Activity className="h-4 w-4 text-green-700" />Agent status: Active</div>
           <div className="flex items-center gap-2">
+            <DemoModeSwitch mode="rogers" />
             <span className="rounded-full bg-blue-50 px-2.5 py-1 text-xs font-semibold text-blue-700">Demo mode</span>
             <span className="hidden rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600 md:inline">Synthetic data</span>
             <span className="hidden rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-700 xl:inline">Human approval required</span>
