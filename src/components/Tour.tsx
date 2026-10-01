@@ -13,7 +13,6 @@ const steps = [
   { title: "Pause for a person", text: "Material actions require human approval before seller assignment, marketplace routing, or CRM creation.", path: "/approvals" },
   { title: "Create the handoff", text: "After approval, Riley creates a simulated opportunity and an auditable seller-ready summary.", path: "/approvals" },
   { title: "Show the economics", text: "The dashboard updates the pipeline story, funnel, attach rates, seller hours returned, and illustrative operating costs.", path: "/performance" },
-  { title: "Understand the business case", text: "Riley’s economics are measured as the cost of creating qualified pipeline and completed CSP sales, not simply the cost of running an AI model.", path: "/tco" },
   { title: "Scale with control", text: "The production concept keeps Rogers data and business rules governed while using Microsoft services for orchestration and monitoring.", path: "/architecture" },
 ];
 
