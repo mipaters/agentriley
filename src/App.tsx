@@ -3,7 +3,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/Layout";
 
 const Overview = lazy(() => import("./pages/Overview").then((module) => ({ default: module.Overview })));
-const VerizonApp = lazy(() => import("./verizon/VerizonApp"));
+const AlternateApp = lazy(() => import("./verizon/AlternateApp"));
 const CustomerZero = lazy(() => import("./pages/CustomerZero").then((module) => ({ default: module.CustomerZero })));
 const Opportunities = lazy(() => import("./pages/Opportunities").then((module) => ({ default: module.Opportunities })));
 const Customer360 = lazy(() => import("./pages/Customer360").then((module) => ({ default: module.Customer360 })));
@@ -20,7 +20,7 @@ export default function App() {
   return (
     <Suspense fallback={<div className="grid min-h-screen place-items-center bg-canvas text-sm font-semibold text-slate-500">Loading Agent Riley…</div>}>
       <Routes>
-        <Route path="verizon/*" element={<VerizonApp />} />
+        <Route path="alternate/*" element={<AlternateApp />} />
         <Route element={<Layout />}>
           <Route index element={<Overview />} />
           <Route path="customer-zero" element={<CustomerZero />} />

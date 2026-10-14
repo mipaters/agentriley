@@ -96,7 +96,7 @@ const initialState: DemoState = {
       {
         id: "intro",
         sender: "Riley",
-        text: "Hi Priya — as Maple Ridge Dental Group grows, Rogers Business may be able to help simplify collaboration and security across your locations. Would it be useful to compare options with your current setup?",
+        text: "Hi Priya — as Maple Ridge Dental Group grows, a combined connectivity and Microsoft solution may help simplify collaboration and security across your locations. Would it be useful to compare options with your current setup?",
         timestamp: "9:30 AM",
       },
     ],
@@ -267,7 +267,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
         },
       },
       scheduleMeeting: {
-        customer: "Please arrange a short meeting with a Rogers Business seller.",
+        customer: "Please arrange a short meeting with a seller.",
         riley: "Thank you. I have captured the need, stakeholders, timing, provider context, and consent status. The handoff will pause for human approval before any meeting or CRM action is created.",
         score: 94,
         qualified: true,

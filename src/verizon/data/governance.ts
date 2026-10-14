@@ -1,6 +1,6 @@
 export const governanceControls = [
   ['Agent identity', 'Agent Riley — disclosed digital sales assistant'],
-  ['Business owner', 'Verizon Business Marketplace (synthetic)'],
+  ['Business owner', 'Digital Marketplace (synthetic)'],
   ['Approved purpose', 'SMB Microsoft CSP qualification and routing'],
   ['Approved channels', 'Email simulation only'],
   ['Program manager control', 'Optional validation of the private offer before marketplace publication'],

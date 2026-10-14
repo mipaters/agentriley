@@ -7,15 +7,15 @@ import { useDemo } from "../context/DemoContext";
 const drafts = {
   Consultative: {
     subject: "Supporting Maple Ridge Dental Group's next stage of growth",
-    body: "Hi Priya,\n\nAs Maple Ridge Dental Group adds a new location, keeping staff access, collaboration, and security consistent can become harder to manage. Rogers Business may be able to help bring connectivity, Microsoft 365 Business Premium, security, and Teams Phone into a more coordinated operating model.\n\nWould a short conversation about your current setup and renewal timing be useful? Any options and commercial terms would be reviewed with a Rogers Business seller.\n\nRegards,\nAgent Riley for Rogers Business",
+    body: "Hi Priya,\n\nAs Maple Ridge Dental Group adds a new location, keeping staff access, collaboration, and security consistent can become harder to manage. A combined connectivity and Microsoft solution may help create a more coordinated operating model.\n\nWould a short conversation about your current setup and renewal timing be useful? Any options and commercial terms would be reviewed with a seller.\n\nRegards,\nAgent Riley",
   },
   Concise: {
     subject: "A simpler technology model for your growing team",
-    body: "Hi Priya,\n\nWith a new location and a growing team, Rogers Business may be able to help simplify collaboration, security, and communications across your offices.\n\nWould you be open to a short assessment of your current Microsoft 365 and phone setup? A Rogers Business seller would validate all options and terms.\n\nRegards,\nAgent Riley for Rogers Business",
+    body: "Hi Priya,\n\nWith a new location and a growing team, a coordinated workplace solution may help simplify collaboration, security, and communications across your offices.\n\nWould you be open to a short assessment of your current Microsoft 365 and phone setup? A seller would validate all options and terms.\n\nRegards,\nAgent Riley",
   },
   Executive: {
     subject: "One technology relationship for Maple Ridge Dental Group",
-    body: "Hi Priya,\n\nGrowth often creates complexity across connectivity, communications, and security. Rogers Business can explore whether a consolidated workplace approach could reduce administration and support consistent operations across your locations.\n\nIf this aligns with your priorities, I can arrange a seller-led review. No changes or commercial commitments are made through this demonstration.\n\nRegards,\nAgent Riley for Rogers Business",
+    body: "Hi Priya,\n\nGrowth often creates complexity across connectivity, communications, and security. Agent Riley can help assess whether a consolidated workplace approach could reduce administration and support consistent operations across your locations.\n\nIf this aligns with your priorities, I can arrange a seller-led review. No changes or commercial commitments are made through this demonstration.\n\nRegards,\nAgent Riley",
   },
 };
 
@@ -33,8 +33,8 @@ export function Outreach() {
       {blocked && <div className="mb-5 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm font-medium text-amber-800">Outreach is blocked by a required governance control or contact preference. Review Governance before continuing.</div>}
       <div className="grid gap-5 xl:grid-cols-[360px_1fr]">
         <div className="space-y-5">
-          <Card><h2 className="font-bold">Campaign context</h2><dl className="mt-4 space-y-3 text-sm">{[["Target account", account.company], ["Target contact", "Priya Shah · Managing Partner"], ["Goal", "Secure a seller-led discovery call"], ["Selected offer", "Rogers Business Modern Workplace"], ["Channel", "Business email"], ["Consent", account.consentStatus]].map(([label, value]) => <div key={label} className="flex justify-between gap-4 border-b border-slate-100 pb-3 last:border-0 last:pb-0"><dt className="text-slate-500">{label}</dt><dd className="text-right font-semibold">{value}</dd></div>)}</dl></Card>
-          <Card><h2 className="font-bold">Personalization sources</h2><Checklist items={["New Mississauga location", "Employee growth signal", "Security research interest", "Existing Rogers connectivity relationship", "Microsoft 365 supplied by another provider"]} /><Button variant="secondary" className="mt-5 w-full" onClick={() => notify("Source details are visible in Customer 360.", "info")}><FileSearch className="h-4 w-4" />Review sources</Button></Card>
+          <Card><h2 className="font-bold">Campaign context</h2><dl className="mt-4 space-y-3 text-sm">{[["Target account", account.company], ["Target contact", "Priya Shah · Managing Partner"], ["Goal", "Secure a seller-led discovery call"], ["Selected offer", "Modern Workplace"], ["Channel", "Business email"], ["Consent", account.consentStatus]].map(([label, value]) => <div key={label} className="flex justify-between gap-4 border-b border-slate-100 pb-3 last:border-0 last:pb-0"><dt className="text-slate-500">{label}</dt><dd className="text-right font-semibold">{value}</dd></div>)}</dl></Card>
+          <Card><h2 className="font-bold">Personalization sources</h2><Checklist items={["New Mississauga location", "Employee growth signal", "Security research interest", "Existing connectivity relationship", "Microsoft 365 supplied by another provider"]} /><Button variant="secondary" className="mt-5 w-full" onClick={() => notify("Source details are visible in Customer 360.", "info")}><FileSearch className="h-4 w-4" />Review sources</Button></Card>
           <Card><h2 className="font-bold">Pre-send controls</h2><Checklist items={["Consent check passed", "Suppression list check passed", "Frequency cap passed", "Content policy check passed", "Human approval required"]} /></Card>
         </div>
         <Card>

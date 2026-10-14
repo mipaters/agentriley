@@ -89,7 +89,7 @@ export interface AzureCostCategory {
 }
 
 export interface ImplementationFunding {
-  route: "Microsoft FDE" | "Microsoft Industry Solutions Delivery" | "Partner-led implementation" | "Rogers-led implementation with Microsoft support" | "Custom scenario";
+  route: "Microsoft FDE" | "Microsoft Industry Solutions Delivery" | "Partner-led implementation" | "Customer-led implementation with Microsoft support" | "Custom scenario";
   grossInvestment: number | null;
   microsoftFunding: number | null;
   rogersContribution: number | null;

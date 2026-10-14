@@ -14,7 +14,7 @@ import {
 } from "./pages/Pages";
 import "./styles.css";
 
-export default function VerizonApp() {
+export default function AlternateApp() {
   return (
     <DemoProvider>
       <div className="verizon-mode">
@@ -29,7 +29,7 @@ export default function VerizonApp() {
             <Route path="customer-zero" element={<CustomerZero />} />
             <Route path="architecture" element={<ArchitectureGovernance />} />
             <Route path="guide" element={<DemoGuide />} />
-            <Route path="*" element={<Navigate to="/verizon" replace />} />
+            <Route path="*" element={<Navigate to="/alternate" replace />} />
           </Route>
         </Routes>
       </div>

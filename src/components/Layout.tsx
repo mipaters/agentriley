@@ -28,7 +28,7 @@ export function Layout() {
     <aside className="flex h-full w-72 flex-col bg-charcoal px-4 py-5 text-white">
       <div className="flex items-center gap-3 px-2">
         <div className="grid h-11 w-11 place-items-center rounded-2xl bg-rogers"><Bot className="h-6 w-6" /></div>
-        <div><p className="font-bold tracking-wide">AGENT RILEY</p><p className="text-xs text-slate-400">Rogers Business</p></div>
+        <div><p className="font-bold tracking-wide">AGENT RILEY</p><p className="text-xs text-slate-400">SMB Growth Demo</p></div>
       </div>
       <nav className="mt-8 flex-1 space-y-1" aria-label="Main navigation">
         {nav.map(({ to, label, icon: Icon }) => (
@@ -62,7 +62,7 @@ export function Layout() {
         </header>
         <main className="page-enter min-h-[calc(100vh-64px)] p-4 md:p-7"><Outlet /></main>
         <footer className="border-t border-slate-200 bg-white px-7 py-4 text-center text-xs text-slate-500">
-          Concept demonstration only. Uses synthetic data and simulated agent actions. Not connected to live Rogers or Microsoft production systems.
+          Concept demonstration only. Uses synthetic data and simulated agent actions. Not connected to live production systems.
         </footer>
       </div>
       <Tour />
@@ -74,7 +74,7 @@ export function Layout() {
           <div className="max-w-lg rounded-3xl bg-white p-6 shadow-2xl">
             <div className="flex justify-between gap-4"><div><p className="text-xs font-bold uppercase tracking-widest text-rogers">Demo information</p><h2 className="mt-2 text-2xl font-bold">Safe for solution exploration</h2></div><button aria-label="Close" onClick={() => setInfoOpen(false)}><X /></button></div>
             <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-600">
-              {["All companies and people are fictional.", "All records, signals, conversations, and economics are synthetic.", "No real email is sent and no live Rogers systems are connected.", "No live Microsoft customer data is accessed.", "Pricing is illustrative and requires seller validation.", "Architecture represents a proposed production pattern, not existing connectors."].map((item) => <li key={item} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-rogers" />{item}</li>)}
+              {["All companies and people are fictional.", "All records, signals, conversations, and economics are synthetic.", "No real email is sent and no live production systems are connected.", "No live Microsoft customer data is accessed.", "Pricing is illustrative and requires seller validation.", "Architecture represents a proposed production pattern, not existing connectors."].map((item) => <li key={item} className="flex gap-2"><span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-rogers" />{item}</li>)}
             </ul>
             <Button className="mt-6 w-full" onClick={() => setInfoOpen(false)}>Understood</Button>
           </div>

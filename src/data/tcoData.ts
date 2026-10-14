@@ -80,7 +80,7 @@ const scaledAssumptions: TcoAssumptions = {
 export const tcoScenarios: TcoScenario[] = [
   { id: "pilot", name: "Controlled Pilot", description: "Validate the Agent Riley pattern with a limited account population, approved offers and human-controlled routing.", assumptions: controlledPilotAssumptions },
   { id: "production", name: "Initial Production", description: "Operate multiple campaigns with production CRM integration, expanded offers and operational monitoring.", assumptions: productionAssumptions },
-  { id: "scaled", name: "Scaled Production", description: "Extend Riley across the Rogers Business SMB base with broader orchestration, offers and campaign volumes.", assumptions: scaledAssumptions },
+  { id: "scaled", name: "Scaled Production", description: "Extend Riley across the SMB base with broader orchestration, offers and campaign volumes.", assumptions: scaledAssumptions },
 ];
 
 export const defaultAzureRateCard: AzureRateCard = {
@@ -130,7 +130,7 @@ export const defaultImplementationFunding: ImplementationFunding = {
 };
 
 export const defaultCustomerResources: CustomerResourceCost[] = [
-  "Rogers product owner", "Rogers architecture", "Rogers engineering", "Rogers data engineering", "CRM integration support", "Security review",
+  "Product owner", "Architecture", "Engineering", "Data engineering", "CRM integration support", "Security review",
   "Privacy and consent review", "Legal and compliance", "Sales operations", "Seller enablement", "Change management", "Production support readiness",
 ].map((name) => ({ name, amount: 0 }));
 

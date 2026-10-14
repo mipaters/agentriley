@@ -10,7 +10,7 @@ export function determineDisposition(q: Qualification) {
   if (!q.consent) return 'Consent withdrawn'
   if (q.existingPartner) return 'Close as no sale — existing partner retained'
   if (q.complexity > 65) return 'Close as no sale — outside digital offer policy'
-  if (score >= 72 && q.digitalReadiness >= 70) return 'Route to Verizon Business Marketplace'
+  if (score >= 72 && q.digitalReadiness >= 70) return 'Route to Digital Marketplace'
   if (score >= 65) return 'Continue agentic qualification'
   return score >= 45 ? 'Continue agentic qualification' : 'Close as no sale'
 }

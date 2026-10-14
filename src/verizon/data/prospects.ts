@@ -20,14 +20,14 @@ const names = [
 ] as const
 
 const offers = [
-  'Verizon Secure Productivity Starter',
-  'Verizon Modern Work Growth',
-  'Verizon AI-Ready Business',
-  'Verizon Teams Phone and Connectivity',
-  'Verizon Secure Hybrid Workforce',
-  'Verizon Connected Copilot Business',
-  'Verizon Marketplace Digital Starter',
-  'Verizon Business Complete',
+  'Secure Productivity Starter',
+  'Modern Work Growth',
+  'AI-Ready Business',
+  'Teams Phone and Connectivity',
+  'Secure Hybrid Workforce',
+  'Connected Copilot Business',
+  'Digital Marketplace Digital Starter',
+  'Complete Workplace',
 ]
 
 export const prospects: Prospect[] = names.map(([company, state, metro, industry], i) => {

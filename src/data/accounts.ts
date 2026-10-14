@@ -30,7 +30,7 @@ export const accounts: Account[] = [
       { label: "Security administration research", type: "Intent", date: "2026-09-19", strength: "High" },
       { label: "Microsoft renewal within 120 days", type: "Renewal", date: "2026-09-12", strength: "Medium" },
     ],
-    scoreBreakdown: { "Business growth": 18, "Product gap": 16, "Security intent": 15, Contactability: 12, "Rogers relationship": 11, "Microsoft renewal proximity": 9, "Engagement history": 6 },
+    scoreBreakdown: { "Business growth": 18, "Product gap": 16, "Security intent": 15, Contactability: 12, "Existing relationship": 11, "Microsoft renewal proximity": 9, "Engagement history": 6 },
   },
   {
     id: "northern-peak",
@@ -54,7 +54,7 @@ export const accounts: Account[] = [
     challenge: "Field teams rely on unmanaged devices and disconnected communications",
     contacts: [{ id: "owen", name: "Owen Clarke", role: "Operations Director", email: "owen.clarke@example.ca", consent: "Permitted" }],
     signals: [{ label: "Hiring project coordinators", type: "Growth", date: "2026-09-22", strength: "High" }],
-    scoreBreakdown: { "Business growth": 17, "Product gap": 15, "Security intent": 13, Contactability: 9, "Rogers relationship": 10, "Microsoft renewal proximity": 8, "Engagement history": 9 },
+    scoreBreakdown: { "Business growth": 17, "Product gap": 15, "Security intent": 13, Contactability: 9, "Existing relationship": 10, "Microsoft renewal proximity": 8, "Engagement history": 9 },
   },
   {
     id: "harbourview",
@@ -78,7 +78,7 @@ export const accounts: Account[] = [
     challenge: "Multiple phone systems across offices",
     contacts: [{ id: "amina", name: "Amina Ross", role: "Managing Partner", email: "amina.ross@example.ca", consent: "Permitted" }],
     signals: [{ label: "Teams Phone comparison activity", type: "Intent", date: "2026-09-18", strength: "High" }],
-    scoreBreakdown: { "Business growth": 8, "Product gap": 14, "Security intent": 10, Contactability: 14, "Rogers relationship": 12, "Microsoft renewal proximity": 8, "Engagement history": 10 },
+    scoreBreakdown: { "Business growth": 8, "Product gap": 14, "Security intent": 10, Contactability: 14, "Existing relationship": 12, "Microsoft renewal proximity": 8, "Engagement history": 10 },
   },
   {
     id: "greenline",
@@ -102,7 +102,7 @@ export const accounts: Account[] = [
     challenge: "Rapid expansion without consistent device protection",
     contacts: [{ id: "marc", name: "Marc Tremblay", role: "VP Operations", email: "marc.tremblay@example.ca", consent: "Permitted" }],
     signals: [{ label: "Managed security inquiry", type: "Intent", date: "2026-09-25", strength: "High" }],
-    scoreBreakdown: { "Business growth": 16, "Product gap": 14, "Security intent": 18, Contactability: 12, "Rogers relationship": 13, "Microsoft renewal proximity": 5, "Engagement history": 6 },
+    scoreBreakdown: { "Business growth": 16, "Product gap": 14, "Security intent": 18, Contactability: 12, "Existing relationship": 13, "Microsoft renewal proximity": 5, "Engagement history": 6 },
   },
   {
     id: "cedar-stone",
@@ -126,7 +126,7 @@ export const accounts: Account[] = [
     challenge: "Store teams use inconsistent productivity tools",
     contacts: [{ id: "leah", name: "Leah Wong", role: "Founder", email: "leah.wong@example.ca", consent: "Pending" }],
     signals: [{ label: "Third store announced", type: "Growth", date: "2026-09-15", strength: "High" }],
-    scoreBreakdown: { "Business growth": 16, "Product gap": 18, "Security intent": 8, Contactability: 6, "Rogers relationship": 8, "Microsoft renewal proximity": 7, "Engagement history": 10 },
+    scoreBreakdown: { "Business growth": 16, "Product gap": 18, "Security intent": 8, Contactability: 6, "Existing relationship": 8, "Microsoft renewal proximity": 7, "Engagement history": 10 },
   },
   {
     id: "northstar-vet",
@@ -150,7 +150,7 @@ export const accounts: Account[] = [
     challenge: "Limited engagement data",
     contacts: [{ id: "noah", name: "Noah Singh", role: "Clinic Owner", email: "noah.singh@example.ca", consent: "Opted out" }],
     signals: [{ label: "New specialist joined", type: "Growth", date: "2026-08-28", strength: "Low" }],
-    scoreBreakdown: { "Business growth": 8, "Product gap": 4, "Security intent": 4, Contactability: 0, "Rogers relationship": 11, "Microsoft renewal proximity": 9, "Engagement history": 12 },
+    scoreBreakdown: { "Business growth": 8, "Product gap": 4, "Security intent": 4, Contactability: 0, "Existing relationship": 11, "Microsoft renewal proximity": 9, "Engagement history": 12 },
   },
   {
     id: "lakeshore",
@@ -174,7 +174,7 @@ export const accounts: Account[] = [
     challenge: "Knowledge workers spend time finding production documentation",
     contacts: [{ id: "elena", name: "Elena Bouchard", role: "CIO", email: "elena.bouchard@example.ca", consent: "Permitted" }],
     signals: [{ label: "Copilot adoption research", type: "Intent", date: "2026-09-20", strength: "High" }],
-    scoreBreakdown: { "Business growth": 14, "Product gap": 10, "Security intent": 9, Contactability: 13, "Rogers relationship": 12, "Microsoft renewal proximity": 10, "Engagement history": 11 },
+    scoreBreakdown: { "Business growth": 14, "Product gap": 10, "Security intent": 9, Contactability: 13, "Existing relationship": 12, "Microsoft renewal proximity": 10, "Engagement history": 11 },
   },
   {
     id: "juniper",
@@ -198,6 +198,6 @@ export const accounts: Account[] = [
     challenge: "Integrating users and client data after an acquisition",
     contacts: [{ id: "grace", name: "Grace Okafor", role: "Principal", email: "grace.okafor@example.ca", consent: "Permitted" }],
     signals: [{ label: "Identity protection research", type: "Intent", date: "2026-09-17", strength: "Medium" }],
-    scoreBreakdown: { "Business growth": 13, "Product gap": 14, "Security intent": 14, Contactability: 8, "Rogers relationship": 10, "Microsoft renewal proximity": 8, "Engagement history": 7 },
+    scoreBreakdown: { "Business growth": 13, "Product gap": 14, "Security intent": 14, Contactability: 8, "Existing relationship": 10, "Microsoft renewal proximity": 8, "Engagement history": 7 },
   },
 ];

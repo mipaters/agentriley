@@ -55,7 +55,7 @@ const timeline = [
   { label: "Agent Riley Outreach", detail: "Relevant engagement", icon: Mail },
   { label: "Customer Qualification", detail: "Need, timing, fit", icon: Bot },
   { label: "Human Review", detail: "Governed approval", icon: UserCheck },
-  { label: "Rogers Seller", detail: "Expert discovery", icon: UsersRound },
+  { label: "Seller", detail: "Expert discovery", icon: UsersRound },
   { label: "Marketplace Purchase", detail: "Digital transaction", icon: ShoppingBag },
   { label: "Revenue Growth", detail: "Recurring value", icon: TrendingUp },
 ];
@@ -65,7 +65,7 @@ export function CustomerZero() {
     <div>
       <PageHeader
         eyebrow="Microsoft Customer Zero Results"
-        title="Microsoft Customer Zero: Proven at Microsoft Before Rogers"
+        title="Microsoft Customer Zero: Proven at Microsoft"
         description="Agent Riley originated within Microsoft's SMB/SME&C organization in Asia as a Customer Zero initiative designed to scale SMB demand generation and qualification using AI agents."
       />
 
@@ -121,9 +121,9 @@ export function CustomerZero() {
 
       <div className="mt-10">
         <PageHeader
-          eyebrow="What This Means For Rogers Business"
-          title="Target Outcomes for Rogers"
-          description="Apply the Customer Zero pattern to Rogers Business connectivity, Microsoft CSP growth, marketplace engagement, and seller capacity."
+          eyebrow="Applying the pattern"
+          title="Target outcomes"
+          description="Apply the Customer Zero pattern to connectivity, Microsoft CSP growth, marketplace engagement, and seller capacity."
         />
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
           {rogersTargets.map((target, index) => (

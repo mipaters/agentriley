@@ -43,7 +43,7 @@ export function Opportunities() {
                     <td className="px-4 py-4"><button onClick={() => navigate(`/accounts/${account.id}`)} className="font-semibold text-charcoal hover:text-rogers">{account.company}</button><p className="mt-1 text-xs text-slate-500">{account.industry}</p></td>
                     <td className="px-4 py-4 text-slate-600">{account.city}, {account.province}</td>
                     <td className="px-4 py-4">{account.employees}</td>
-                    <td className="px-4 py-4"><p>{account.rogersProducts.length} Rogers</p><p className="text-xs text-slate-500">{account.microsoftProducts.length} Microsoft</p></td>
+                    <td className="px-4 py-4"><p>{account.rogersProducts.length} connectivity</p><p className="text-xs text-slate-500">{account.microsoftProducts.length} Microsoft</p></td>
                     <td className="px-4 py-4"><div className="flex items-center gap-3"><span className="w-7 font-bold">{account.propensity}</span><div className="w-16"><ProgressBar value={account.propensity} /></div></div></td>
                     <td className="px-4 py-4"><Badge tone={account.consentStatus === "Permitted" ? "success" : account.consentStatus === "Pending" ? "warning" : "danger"}>{account.consentStatus}</Badge></td>
                     <td className="px-4 py-4"><Badge tone="info">{account.stage}</Badge></td>

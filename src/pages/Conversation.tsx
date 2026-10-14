@@ -45,7 +45,7 @@ const qualificationChoices: Choice[] = [
 ];
 
 const handoffChoices: Choice[] = [
-  { id: "scheduleMeeting", text: "Please arrange a short meeting with a Rogers Business seller." },
+  { id: "scheduleMeeting", text: "Please arrange a short meeting with a seller." },
   { id: "sendSummary", text: "Send a short summary first, then we can decide on a meeting." },
   { id: "notReady", text: "We are not ready for a meeting; follow up closer to renewal." },
   { id: "optout", text: "Please remove us from future outreach." },
@@ -79,7 +79,7 @@ export function Conversation() {
         <div className="space-y-5">
           <Card><div className="flex items-center justify-between"><h2 className="font-bold">Qualification progress</h2><span className="text-2xl font-bold">{qualification.score}</span></div><div className="mt-3"><ProgressBar value={qualification.score} /></div><p className="mt-3 text-xs text-slate-500">Updates when the customer shares relevant information.</p><Button className="mt-5 w-full" onClick={() => navigate("/qualification")}>Open qualification</Button></Card>
           {stopped ? <Card className="border-red-200 bg-red-50"><Ban className="h-6 w-6 text-red-700" /><h2 className="mt-3 font-bold text-red-900">Sequence stopped</h2><p className="mt-2 text-sm leading-6 text-red-800">The contact opted out. Riley recorded the preference, added an audit event, and disabled every selling action for this contact.</p></Card> : <Card><MessageCircle className="h-6 w-6 text-blue-700" /><h2 className="mt-3 font-bold">Conversation guardrails</h2><ul className="mt-3 space-y-2 text-sm leading-5 text-slate-600"><li>Ask only relevant questions</li><li>Do not invent pricing or terms</li><li>Escalate uncertainty to a seller</li><li>Respect opt-out immediately</li></ul></Card>}
-          <Card><ShieldAlert className="h-6 w-6 text-amber-700" /><h2 className="mt-3 font-bold">Commercial boundary</h2><p className="mt-2 text-sm leading-6 text-slate-600">Final solution design, pricing, discounts, migration commitments, and contractual terms require a Rogers Business seller.</p></Card>
+          <Card><ShieldAlert className="h-6 w-6 text-amber-700" /><h2 className="mt-3 font-bold">Commercial boundary</h2><p className="mt-2 text-sm leading-6 text-slate-600">Final solution design, pricing, discounts, migration commitments, and contractual terms require a seller.</p></Card>
         </div>
       </div>
     </div>

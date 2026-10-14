@@ -1,14 +1,14 @@
 # Agent Riley
 
-**AI-powered inside sales for Rogers Business SMB growth**
+**AI-powered inside sales for SMB growth**
 
-Agent Riley is a production-quality interactive concept demonstration showing how Rogers Business could identify high-potential SMB accounts, conduct governed outreach, qualify opportunities, recommend Rogers and Microsoft bundles, request human approval, and create a simulated seller handoff.
+Agent Riley is a production-quality interactive concept demonstration showing how an organization could identify high-potential SMB accounts, conduct governed outreach, qualify opportunities, recommend connectivity and Microsoft bundles, request human approval, and create a simulated seller handoff.
 
-> Concept demonstration only. Uses synthetic data and simulated agent actions. Not connected to live Rogers or Microsoft production systems.
+> Concept demonstration only. Uses synthetic data and simulated agent actions. Not connected to live production systems.
 
 ## Business scenario
 
-The executive walkthrough follows Maple Ridge Dental Group, a fictional 42-person business opening a second location. Riley combines a synthetic Rogers relationship, product gaps, growth signals, security intent, contactability, and renewal proximity to recommend a Rogers Business Modern Workplace bundle. The customer conversation, consent checks, qualification, approval, CRM record, metrics, and audit events are all simulated locally.
+The executive walkthrough follows Maple Ridge Dental Group, a fictional 42-person business opening a second location. Riley combines a synthetic service relationship, product gaps, growth signals, security intent, contactability, and renewal proximity to recommend a Modern Workplace bundle. The customer conversation, consent checks, qualification, approval, CRM record, metrics, and audit events are all simulated locally.
 
 ## Demo capabilities
 
@@ -18,7 +18,7 @@ The executive walkthrough follows Maple Ridge Dental Group, a fictional 42-perso
 - Tone-aware outreach studio with consent and policy checks
 - Branching customer conversation, including enforced opt-out
 - Explainable BANT-style qualification
-- Three Rogers Business bundle recommendations
+- Three approved bundle recommendations
 - Human approval queue and simulated Dynamics 365-style opportunity
 - Performance funnel, pipeline trend, attach rates, and illustrative agent economics
 - Responsive HTML solution architecture with demo/production toggle
@@ -31,12 +31,12 @@ The proposed production pattern separates:
 
 1. Experience channels and seller workspaces
 2. Agent orchestration, qualification, recommendation, and approvals
-3. Rogers and approved Microsoft signals
+3. Connectivity and approved Microsoft signals
 4. API, event, CRM, and marketplace integration
-5. Rogers-governed data, Fabric, search, and audit records
+5. Governed customer data, Fabric, search, and audit records
 6. Identity, Purview, Defender, monitoring, responsible AI, and human oversight
 
-The repository contains no production connectors. Rogers customer data and business rules would remain in Rogers-governed environments.
+The repository contains no production connectors. Customer data and business rules would remain in governed environments.
 
 ## Technology
 
@@ -114,7 +114,7 @@ DNS is intentionally not changed by this repository.
 ## Assumptions and limitations
 
 - All names, companies, emails, signals, products, values, and interactions are fictional.
-- Pricing and economics are illustrative, not Rogers price guidance or production cost estimates.
+- Pricing and economics are illustrative, not production price guidance or production cost estimates.
 - “Microsoft propensity signals,” CRM, marketplace, email, Azure AI Foundry, Copilot Studio, Fabric, and Azure AI Search are architecture concepts only.
 - The demo uses deterministic local responses rather than an external AI service.
 - Responsive behaviour is optimized for desktop and tablet presentations.

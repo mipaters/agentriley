@@ -174,14 +174,14 @@ export function calculateThreeYearTco(
   const annualBenefit = value.grossMargin + Math.max(0, value.hardDollarValue - value.grossMargin);
   const rows = [
     { name: "FDE implementation", year1: implementation ?? 0, year2: 0, year3: 0, type: "Cost" as const },
-    { name: "Rogers internal incremental implementation", year1: internal, year2: 0, year3: 0, type: "Cost" as const },
+    { name: "Internal incremental implementation", year1: internal, year2: 0, year3: 0, type: "Cost" as const },
     { name: "Production hardening", year1: funding.productionHardening, year2: 0, year3: 0, type: "Cost" as const },
     { name: "Change management", year1: funding.changeManagement, year2: 0, year3: 0, type: "Cost" as const },
     { name: "Seller enablement", year1: funding.sellerEnablement, year2: 0, year3: 0, type: "Cost" as const },
     { name: "Azure operations", year1: azure.annual, year2: azure.annual * 1.08, year3: azure.annual * 1.16, type: "Cost" as const },
     { name: "Application and governance operations", year1: azure.annual * 0.35, year2: azure.annual * 0.4, year3: azure.annual * 0.45, type: "Cost" as const },
     { name: "Microsoft CSP bookings", year1: value.microsoftBookings, year2: value.microsoftBookings * 1.15, year3: value.microsoftBookings * 1.3, type: "Benefit" as const },
-    { name: "Rogers connectivity bookings", year1: value.connectivityBookings, year2: value.connectivityBookings * 1.15, year3: value.connectivityBookings * 1.3, type: "Benefit" as const },
+    { name: "Connectivity bookings", year1: value.connectivityBookings, year2: value.connectivityBookings * 1.15, year3: value.connectivityBookings * 1.3, type: "Benefit" as const },
     { name: "Gross-margin contribution and avoided expense", year1: annualBenefit, year2: annualBenefit * 1.15, year3: annualBenefit * 1.3, type: "Benefit" as const },
   ];
   const grossTco = implementation === null ? null : rows.filter((row) => row.type === "Cost").reduce((sum, row) => sum + row.year1 + row.year2 + row.year3, 0);

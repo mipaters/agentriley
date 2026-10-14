@@ -19,9 +19,9 @@ export function Overview() {
       <section className="relative overflow-hidden rounded-3xl bg-charcoal px-6 py-12 text-white shadow-card md:px-10 md:py-16">
         <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-rogers/20 blur-3xl" />
         <div className="relative max-w-3xl">
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-red-300">Rogers Business · Concept demonstration</p>
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-red-300">Concept demonstration</p>
           <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-7xl">Agent Riley</h1>
-          <p className="mt-3 text-xl font-semibold text-white md:text-2xl">AI-powered inside sales for Rogers Business</p>
+          <p className="mt-3 text-xl font-semibold text-white md:text-2xl">AI-powered inside sales for SMB growth</p>
           <p className="mt-5 max-w-2xl text-base leading-7 text-slate-300">Find the right SMB customer, start a relevant conversation, qualify the opportunity, recommend the best bundle, and route it to the right seller.</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button onClick={() => { setActiveTour(0); navigate("/opportunities"); }}><Sparkles className="h-4 w-4" />Take the Tour</Button>
@@ -53,13 +53,13 @@ export function Overview() {
         {[
           { icon: Building2, title: "Expand SMB coverage", text: "Consistently monitor synthetic account signals and prioritize the customers most likely to benefit." },
           { icon: Target, title: "Improve lead quality", text: "Give sellers transparent evidence, conversation context, qualification status, and clear next actions." },
-          { icon: TrendingUp, title: "Grow recurring revenue", text: "Connect Rogers connectivity with Microsoft cloud, security, collaboration, devices, and marketplace solutions." },
+          { icon: TrendingUp, title: "Grow recurring revenue", text: "Connect connectivity services with Microsoft cloud, security, collaboration, devices, and marketplace solutions." },
         ].map(({ icon: Icon, title, text }) => <Card key={title}><Icon className="h-6 w-6 text-rogers" /><h2 className="mt-4 text-lg font-bold">{title}</h2><p className="mt-2 text-sm leading-6 text-slate-600">{text}</p></Card>)}
       </div>
 
       <Card className="mt-8 bg-gradient-to-r from-red-50 to-white">
         <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div><p className="text-xs font-bold uppercase tracking-widest text-rogers">Why Rogers Business</p><h2 className="mt-2 text-2xl font-bold">A differentiated relationship for Canadian SMBs</h2><p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">Rogers can bring together trusted connectivity, established customer relationships, digital channels, and Microsoft cloud solutions into one coordinated growth motion—supported by human sellers and governed business rules.</p></div>
+          <div><p className="text-xs font-bold uppercase tracking-widest text-rogers">Why this model</p><h2 className="mt-2 text-2xl font-bold">A differentiated relationship for Canadian SMBs</h2><p className="mt-3 max-w-3xl text-sm leading-6 text-slate-600">The model brings together trusted connectivity, established customer relationships, digital channels, and Microsoft cloud solutions into one coordinated growth motion—supported by human sellers and governed business rules.</p></div>
           <div className="flex gap-3 text-sm font-semibold text-slate-600"><Layers3 className="text-rogers" />Connectivity + cloud + people <ShieldCheck className="text-green-700" /></div>
         </div>
       </Card>

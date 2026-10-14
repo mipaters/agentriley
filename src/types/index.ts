@@ -23,7 +23,7 @@ export interface ConsentRecord {
 }
 
 export interface ProductHolding {
-  provider: "Rogers Business" | "Microsoft" | "Other";
+  provider: "Connectivity provider" | "Microsoft" | "Other";
   name: string;
   detail: string;
 }

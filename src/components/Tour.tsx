@@ -5,15 +5,15 @@ import { Button, ProgressBar } from "./ui";
 
 const steps = [
   { title: "Find the right account", text: "Riley identifies Maple Ridge Dental Group as a high-propensity SMB based on growth, product gap, security intent, and contactability.", path: "/opportunities" },
-  { title: "Understand the customer", text: "The account has Rogers Business Internet and wireless, while Microsoft 365 is supplied through another provider.", path: "/accounts/maple-ridge" },
+  { title: "Understand the customer", text: "The account has Business Internet and wireless, while Microsoft 365 is supplied through another provider.", path: "/accounts/maple-ridge" },
   { title: "Prepare compliant outreach", text: "Riley drafts a relevant message focused on a growing team, simpler security, and one technology relationship.", path: "/outreach" },
   { title: "Start a conversation", text: "A synthetic response begins a two-way exchange. Riley stays grounded, asks relevant questions, and respects opt-out immediately.", path: "/conversations" },
   { title: "Qualify transparently", text: "Need, authority, timing, budget fit, consent, provider, product fit, and interest produce an explainable score.", path: "/qualification" },
-  { title: "Recommend the next best bundle", text: "Riley compares three Rogers Business bundles and explains why each fits, including dependencies and illustrative value.", path: "/offers" },
+  { title: "Recommend the next best bundle", text: "Riley compares three approved bundles and explains why each fits, including dependencies and illustrative value.", path: "/offers" },
   { title: "Pause for a person", text: "Material actions require human approval before seller assignment, marketplace routing, or CRM creation.", path: "/approvals" },
   { title: "Create the handoff", text: "After approval, Riley creates a simulated opportunity and an auditable seller-ready summary.", path: "/approvals" },
   { title: "Show the economics", text: "The dashboard updates the pipeline story, funnel, attach rates, seller hours returned, and illustrative operating costs.", path: "/performance" },
-  { title: "Scale with control", text: "The production concept keeps Rogers data and business rules governed while using Microsoft services for orchestration and monitoring.", path: "/architecture" },
+  { title: "Scale with control", text: "The production concept keeps customer data and business rules governed while using Microsoft services for orchestration and monitoring.", path: "/architecture" },
 ];
 
 export function Tour() {

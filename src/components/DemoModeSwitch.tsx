@@ -12,15 +12,15 @@ export function DemoModeSwitch({ mode }: { mode: "rogers" | "verizon" }) {
         className={`${buttonClass} ${mode === "rogers" ? "bg-rogers text-white" : "text-slate-700 hover:bg-white"}`}
         onClick={() => navigate("/")}
       >
-        Rogers
+        Core Demo
       </button>
       <button
         type="button"
         aria-pressed={mode === "verizon"}
         className={`${buttonClass} ${mode === "verizon" ? "bg-red-600 text-white" : "text-slate-700 hover:bg-white"}`}
-        onClick={() => navigate("/verizon")}
+        onClick={() => navigate("/alternate")}
       >
-        Verizon Business Group
+        Alternate Demo
       </button>
     </div>
   );
